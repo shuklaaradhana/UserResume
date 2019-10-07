@@ -17,3 +17,6 @@
 ##### The app consists of two screens - <br/>
 * First screen shows the list of users, uses RecylerView (ResumeListFragment) <br/>
 * When you click on the user name on the first screen, resume details of that user are shown along with the list of his experiences. The list of experiences is a recycler view which can be scrolled. (ResumeDetailsFragment)
+
+![User_Resumes_List](https://user-images.githubusercontent.com/5384429/66353630-53be2280-e917-11e9-8122-3588f5932dd9.png)
+![User_Resume_Details](https://user-images.githubusercontent.com/5384429/66353634-591b6d00-e917-11e9-89c0-f129424ab9be.png)
