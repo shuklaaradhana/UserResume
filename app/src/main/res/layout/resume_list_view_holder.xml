@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cardView="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="userResume"
+            type="com.resume.app.resume.data.UserProfile" />
+
+        <variable
+            name="item"
+            type="com.resume.app.resume.callbacks.OnResumeCardClickListener" />
+    </data>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/resume_card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:onClick="@{() -> item.onClick(userResume)}"
+        cardView:cardBackgroundColor="@color/blue_20_percent"
+        cardView:cardCornerRadius="1dp"
+        cardView:cardElevation="3dp"
+        cardView:cardPreventCornerOverlap="false"
+        cardView:cardUseCompatPadding="true">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:drawableEnd="@drawable/ic_chevron_foward_24"
+                android:drawableRight="@drawable/ic_chevron_foward_24"
+                android:drawablePadding="10dp"
+                android:text="@{userResume.name}"
+                android:textColor="@color/blue_note_unified"
+                android:textSize="@dimen/resume_text_size"
+                tools:text="my name" />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</layout>

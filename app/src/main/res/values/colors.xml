@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="black">#E6000000</color>
+    <color name="blue_50_percent">#80224099</color>
+    <color name="black_5_percent">#0D000000</color>
+    <color name="blue_20_percent">#33224099</color>
+    <color name="blue_note_unified">#2D55CC</color>
+</resources>

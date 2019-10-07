@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="userResume"
+            type="com.resume.app.resume.data.UserProfile" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/blue_20_percent">
+
+        <TextView
+            android:id="@+id/name"
+            style="@style/ResumeTitleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="@{userResume.name}"
+            android:textColor="@color/blue_note_unified"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@id/guideline3"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="39dp"
+            tools:layout_editor_absoluteY="93dp"
+            tools:text="Aradhana Shukla" />
+
+        <TextView
+            android:id="@+id/summary"
+            style="@style/ResumeSubTitleText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@{userResume.summary}"
+            app:layout_constraintEnd_toStartOf="@id/barrier"
+            app:layout_constraintStart_toStartOf="@id/guideline3"
+            app:layout_constraintTop_toBottomOf="@+id/name"
+            tools:layout_editor_absoluteX="39dp"
+            tools:text="Well-rounded , android software developer with an extensive background creating mobile-based applications for productivity suites." />
+
+        <TextView
+            android:id="@+id/street_name"
+            style="@style/ResumeSubTitleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{userResume.address.streetName}"
+            app:layout_constraintBaseline_toBaselineOf="@+id/name"
+            app:layout_constraintEnd_toStartOf="@id/guideline4"
+            app:layout_constraintTop_toTopOf="@id/name"
+            tools:text="34665 Allegheny Ct" />
+
+        <TextView
+            android:id="@+id/city"
+            style="@style/ResumeSubTitleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{userResume.address.city}"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/guideline4"
+            app:layout_constraintTop_toBottomOf="@id/street_name"
+            tools:text="Fremont" />
+
+        <TextView
+            android:id="@+id/postal_code"
+            style="@style/ResumeSubTitleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{userResume.address.postalCode}"
+            app:layout_constraintEnd_toStartOf="@id/guideline4"
+            app:layout_constraintTop_toBottomOf="@id/city"
+            tools:layout_editor_absoluteX="314dp"
+            tools:text="94555" />
+
+        <TextView
+            android:id="@+id/email"
+            style="@style/ResumeSubTitleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{userResume.email}"
+            app:layout_constraintEnd_toStartOf="@id/guideline4"
+            app:layout_constraintTop_toBottomOf="@id/postal_code"
+            android:layout_marginLeft="3dp"
+            app:layout_constraintStart_toEndOf="@id/barrier"
+            tools:layout_editor_absoluteX="314dp"
+            tools:text="aradhanashukla86@gmail.com" />
+
+        <TextView
+            android:id="@+id/phone_number"
+            style="@style/ResumeSubTitleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{userResume.phoneNumber}"
+            app:layout_constraintEnd_toStartOf="@id/guideline4"
+            app:layout_constraintTop_toBottomOf="@id/email"
+            tools:text="7788005952" />
+
+        <androidx.constraintlayout.widget.Group
+            android:id="@+id/group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:constraint_referenced_ids="street_name,city,postal_code,email,phone_number"
+            tools:visibility="visible" />
+
+        <androidx.constraintlayout.widget.Barrier
+            android:id="@+id/barrier"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:barrierDirection="right"
+            app:constraint_referenced_ids="summary,name,resume_details_recycler"
+            tools:layout_editor_absoluteX="411dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="30dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_end="29dp" />
+
+        <TextView
+            android:id="@+id/experience"
+            style="@style/ResumeTitleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            app:layout_constraintStart_toStartOf="@id/guideline3"
+            app:layout_constraintTop_toBottomOf="@id/summary"
+            tools:layout_editor_absoluteX="39dp"
+            tools:layout_editor_absoluteY="93dp"
+            tools:text="Experience" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/resume_details_recycler"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@color/black_5_percent"
+            android:clickable="true"
+            android:scrollbars="vertical"
+            app:layout_constraintEnd_toStartOf="@id/guideline4"
+            app:layout_constraintStart_toStartOf="@id/guideline3"
+            app:layout_constraintTop_toBottomOf="@id/experience"
+            tools:itemCount="100" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
