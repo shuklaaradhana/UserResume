@@ -42,7 +42,7 @@
                 android:drawableRight="@drawable/ic_chevron_foward_24"
                 android:drawablePadding="10dp"
                 android:text="@{userResume.name}"
-                android:textColor="@color/blue_note_unified"
+                android:textColor="@color/black_60_percent"
                 android:textSize="@dimen/resume_text_size"
                 tools:text="my name" />
 

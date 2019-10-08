@@ -7,4 +7,6 @@
     <color name="black_5_percent">#0D000000</color>
     <color name="blue_20_percent">#33224099</color>
     <color name="blue_note_unified">#2D55CC</color>
+    <color name="black_40_percent">#66000000</color>
+    <color name="black_60_percent">#99000000</color>
 </resources>

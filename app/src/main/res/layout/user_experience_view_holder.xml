@@ -45,6 +45,7 @@
             android:layout_marginLeft="10dp"
             android:layout_marginTop="10dp"
             android:text="@{userExperience.company}"
+            android:textStyle="bold"
             android:textSize="@dimen/resume_text_size"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/role"
@@ -59,9 +60,10 @@
             android:layout_marginTop="10dp"
             android:text="@{userExperience.year}"
             android:textSize="@dimen/resume_text_size"
+            android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/company"
-            tools:text="my name" />
+            tools:text="2017 - Present" />
 
         <TextView
             android:id="@+id/responsibility_text"
@@ -71,12 +73,11 @@
             android:layout_marginLeft="10dp"
             android:layout_marginTop="10dp"
             android:text="@string/responsibilities"
-            android:textColor="@color/blue_note_unified"
+            android:textStyle="bold|italic"
             android:textSize="@dimen/resume_text_size"
-            android:textStyle="italic"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/year"
-            tools:text="my name" />
+            tools:text="2017 - 2019" />
 
         <TextView
             android:id="@+id/responsibility"
@@ -100,9 +101,8 @@
             android:layout_marginLeft="10dp"
             android:layout_marginTop="10dp"
             android:text="@string/achievements"
-            android:textColor="@color/blue_note_unified"
             android:textSize="@dimen/resume_text_size"
-            android:textStyle="italic"
+            android:textStyle="bold|italic"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/responsibility"
             tools:text="my name" />

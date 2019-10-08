@@ -19,7 +19,7 @@ class ResumeAppApplication : Application(), HasActivityInjector {
         lateinit var dagger: ResumeAppComponent
 
         private const val REQUEST_URL =
-            "https://gist.githubusercontent.com/shuklaaradhana/b6a19c0d2683bbc6f9b8e6111830f44c/raw/29213a8c4e7d7c504cb618cd3b2ec9864a3a2f4a/resume_list.json/"
+            "https://gist.githubusercontent.com/shuklaaradhana/b6a19c0d2683bbc6f9b8e6111830f44c/raw/1d3d0681001bcc3284d467350e8a4502d7338ec5/resume_list.json/"
     }
 
     override fun onCreate() {
