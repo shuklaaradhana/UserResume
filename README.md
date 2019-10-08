@@ -32,8 +32,8 @@ Navigate to the `release` tab
 * Used dimen and style xml files to standardize the layout throughout the app <br/>
 * Used vector drawables
 * Used RecylerView to show
-User names list on the first screen . 
-List of the user experiences when clicking on a particular user name on the first screen, user is navigated to his resume .  
+    * User names list on the first screen
+    * List of the user experiences when clicking on a particular user name on the first screen, user is navigated to his resume 
 
 ## About the App 
 #### _The app consists of two screens_
