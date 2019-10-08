@@ -18,5 +18,5 @@
 * First screen shows the list of users, uses RecylerView (ResumeListFragment) <br/>
 * When you click on the user name on the first screen, resume details of that user are shown along with the list of his experiences. The list of experiences is a recycler view which can be scrolled. (ResumeDetailsFragment)
 
-![User_Resumes_List](https://user-images.githubusercontent.com/5384429/66353630-53be2280-e917-11e9-8122-3588f5932dd9.png)
-![User_Resume_Details](https://user-images.githubusercontent.com/5384429/66353634-591b6d00-e917-11e9-89c0-f129424ab9be.png)
+<img width="271" alt="Users_List" src="https://user-images.githubusercontent.com/5384429/66355673-f4631100-e91c-11e9-83ad-e27420ee69f7.png">
+<img width="270" alt="User_Resume_Details" src="https://user-images.githubusercontent.com/5384429/66355679-f88f2e80-e91c-11e9-9480-d0e4867c16db.png">
