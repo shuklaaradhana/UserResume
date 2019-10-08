@@ -1,9 +1,10 @@
 - [Introduction](#introduction)
 - [Installation](#installation)
-- [Tools and Technologies used](#tools-and-technology-used)
+- [Tools and Technologies used](#tools-and-technologies-used)
 - [Run the test cases](#run-the-test-cases)
 
 ## Introduction
+The app is used to view the resume of the user. The data is uploaded on gist.github.com and is being fetched using Retrofit by the app. The data contains the resume of all the users in Json format. The data from the server is converted into the Kotlin data class which is being used to show the resume details on the UI.
 
 ## Installation 
 #### _I have uploaded pre-released APK to the release tab - this could be retrieved and installed by following the steps below_
@@ -31,6 +32,7 @@ Navigate to the `release` tab
 * Using MVVM design pattern 
 * Used dimen and style xml files to standardize the layout throughout the app <br/>
 * Used vector drawables
+* Used ConstraintLayout
 * Used RecylerView to show
     * User names list on the first screen
     * List of the user experiences when clicking on a particular user name on the first screen, user is navigated to his resume 
@@ -40,10 +42,12 @@ Navigate to the `release` tab
 1. First screen shows the list of users, uses RecylerView (ResumeListFragment)
 1. When you click on the user name on the first screen, resume details of that user are shown along with the list of his experiences. The list of experiences is a recycler view which can be scrolled. (ResumeDetailsFragment)
 
-<img width="271" alt="Users_List" src="https://user-images.githubusercontent.com/5384429/66355673-f4631100-e91c-11e9-83ad-e27420ee69f7.png">
-<img width="270" alt="User_Resume_Details" src="https://user-images.githubusercontent.com/5384429/66355679-f88f2e80-e91c-11e9-9480-d0e4867c16db.png">
+<img width="236" alt="User_List" src="https://user-images.githubusercontent.com/5384429/66415633-e5c63980-e9b0-11e9-945b-2231bca78dcb.png">
+<img width="236" alt="User_resume_details" src="https://user-images.githubusercontent.com/5384429/66415640-e9f25700-e9b0-11e9-90c4-0302721cea9e.png">
 
 ## Run the test cases
+1. Unit Test cases (ResumeViewVmImplTest class) 
+1. UI Instrumented Test Cases (ResumeDetailsTest class)
 
 
 `
