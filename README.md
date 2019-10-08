@@ -21,19 +21,19 @@ Navigate to the `release` tab
 ## Tools and Technologies used
 
 #### Key points - <br/>
-1. Used Dagger 2 for injection of Activities, Fragments and other classes <br/>
-1. Used Retrofit 2 for network calls
-1. Used RxJava 2
-1. Used Data Binding to set the text and onClick calls
-1. Used JUnit and Mockito for Unit testing
-1. Used espresso for UI instrumented test cases
-1. Used Kotlin
-1. Using MVVM design pattern 
-1. Used dimen and style xml files to standardize the layout throughout the app <br/>
-1. Used vector drawables
-1. Used RecylerView to show
-* User names list on the first screen
-* List of the user experiences when clicking on a particular user name on the first screen, user is navigated to his resume
+* Used Dagger 2 for injection of Activities, Fragments and other classes <br/>
+* Used Retrofit 2 for network calls
+* Used RxJava 2
+* Used Data Binding to set the text and onClick calls
+* Used JUnit and Mockito for Unit testing
+* Used espresso for UI instrumented test cases
+* Used Kotlin
+* Using MVVM design pattern 
+* Used dimen and style xml files to standardize the layout throughout the app <br/>
+* Used vector drawables
+* Used RecylerView to show
+User names list on the first screen . 
+List of the user experiences when clicking on a particular user name on the first screen, user is navigated to his resume .  
 
 ## About the App 
 #### _The app consists of two screens_
