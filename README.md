@@ -12,8 +12,7 @@ The app is used to view the resume of the user. The data is uploaded on gist.git
 ## Installation 
 #### _I have uploaded pre-released APK to the release tab - this could be retrieved and installed by following the steps below_
 1. Go to the url https://github.com/shuklaaradhana/UserResume
-Navigate to the `release` tab
-1. You will find `User Resume Apk`
+1. Navigate to the `release` tab - _you will find `User Resume Apk`_
 1. Go to the `Assets` section, you will find the apk named `resume-app-release.apk`
 1. Click on the file name, it will get downloaded in the android device
 1. `Open` the dowloaded app, it will ask for your permission to install the app
