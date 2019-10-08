@@ -1,3 +1,5 @@
+# Resume App
+
 - [Introduction](#introduction)
 - [Installation](#installation)
 - [Tools and Technologies used](#tools-and-technologies-used)
