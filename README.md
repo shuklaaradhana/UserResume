@@ -2,6 +2,7 @@
 
 - [Introduction](#introduction)
 - [Installation](#installation)
+- [About the App](#about-the-app)
 - [Tools and Technologies used](#tools-and-technologies-used)
 - [Run the test cases](#run-the-test-cases)
 
@@ -21,6 +22,14 @@ Navigate to the `release` tab
 1. After installation you will see the users list screen with multiple users.
 1. Click on any user and you will be navigated to the resume of that user.
 
+## About the App 
+#### _The app consists of two screens_
+1. First screen shows the list of users, uses RecylerView (ResumeListFragment)
+1. When you click on the user name on the first screen, resume details of that user are shown along with the list of his experiences. The list of experiences is a recycler view which can be scrolled. (ResumeDetailsFragment)
+
+<img width="236" alt="User_List" src="https://user-images.githubusercontent.com/5384429/66415633-e5c63980-e9b0-11e9-945b-2231bca78dcb.png">
+<img width="236" alt="User_resume_details" src="https://user-images.githubusercontent.com/5384429/66415640-e9f25700-e9b0-11e9-90c4-0302721cea9e.png">
+
 ## Tools and Technologies used
 
 #### Key points - <br/>
@@ -38,14 +47,6 @@ Navigate to the `release` tab
 * Used RecylerView to show
     * User names list on the first screen
     * List of the user experiences when clicking on a particular user name on the first screen, user is navigated to his resume 
-
-## About the App 
-#### _The app consists of two screens_
-1. First screen shows the list of users, uses RecylerView (ResumeListFragment)
-1. When you click on the user name on the first screen, resume details of that user are shown along with the list of his experiences. The list of experiences is a recycler view which can be scrolled. (ResumeDetailsFragment)
-
-<img width="236" alt="User_List" src="https://user-images.githubusercontent.com/5384429/66415633-e5c63980-e9b0-11e9-945b-2231bca78dcb.png">
-<img width="236" alt="User_resume_details" src="https://user-images.githubusercontent.com/5384429/66415640-e9f25700-e9b0-11e9-90c4-0302721cea9e.png">
 
 ## Run the test cases
 1. Unit Test cases (ResumeViewVmImplTest class) 
