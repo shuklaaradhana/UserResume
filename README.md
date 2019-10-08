@@ -49,8 +49,8 @@ Navigate to the `release` tab
     * List of the user experiences when clicking on a particular user name on the first screen, user is navigated to his resume 
 
 ## Run the test cases
-1. Unit Test cases (ResumeViewVmImplTest class) 
-1. UI Instrumented Test Cases (ResumeDetailsTest class)
+1. Unit Test cases [ResumeViewVmImplTest.kt](https://github.com/shuklaaradhana/UserResume/blob/master/app/src/test/java/com/resume/app/ResumeViewVmImplTest.kt) 
+1. UI Instrumented Test Cases [ResumeDetailsTest.kt](https://github.com/shuklaaradhana/UserResume/blob/master/app/src/androidTest/java/com/resume/app/ResumeDetailsTest.kt)
 
 
 `
